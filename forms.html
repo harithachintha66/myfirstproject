@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registration page</title>
+    <style>
+       #id{
+        border-width:5px;
+        border-style:solid;
+        border-color: rgb(33, 134, 0);
+        text-align: center;
+        color: deeppink;
+       }
+       #coun{
+        border-width:3px;
+        border-style:solid;
+        border-color: rgb(157, 210, 0);
+        color: rgb(20, 247, 255);
+       }
+       #FN{
+        border-width:3px;+
+        border-style:solid;
+        border-color: rgb(4, 46, 255);
+        color: rgb(220, 20, 255);
+       }
+       input[id=address]{
+        border-width:3px;
+        border-style:solid;
+        border-color: rgb(24, 149, 10);
+        color: rgb(28, 20, 255);
+       }
+       input[type=submit]{
+        border-width:3px;
+        border-style:solid;
+        border-color: rgb(231, 0, 0);
+        color: rgb(255, 20, 145);
+       }
+    </style>
+    </head>
+    <body>
+        <h2 id="id">Registration page</h2>
+        <form style="background-color:rgb(155, 207, 190)" action="success.html">
+            <fieldset>
+            <label>firstname:<sup>*</sup></label>
+                <input id="FN" name="firstname" type="text" required>
+                <br />
+                <br />
+            <label>Lastname:<sup>*</sup></label>
+                <input id="FN" name="Lastname" type="text" required>
+                <br />
+                <br />
+            <label for="DOB">DOB:<sup>*</sup></label>
+            <input id="FN" type="date" name="date of birth" required>
+            <br>
+            <br>
+            <label>Email Address:<sup>*</sup></label>
+            <input id="FN" name="email address" type="email" required>
+            <br />
+            <br />
+            <label >phone no.:<sup>*</sup></label>
+            <input id="FN" type="text" pattern="[0-9]{10}" required>
+            <br />
+            <br />
+            <label for="Gender">Gender:<sup>*</sup></label>
+            <br />
+            <br />
+            <label >Female</label>
+            <input id="female" name="Gender" type="radio" />
+            <label >male</label>
+            <input id="male" name="Gender" type="radio" />
+           <!-- <label>submit</label> -->
+           <br />
+            <br>
+           <label >address:<sup>*</sup></label> </label>
+           <fieldset>
+            <label for="H.No:">House number</label>
+            <input id="address" name="address" type="text" required/>            
+            <br>
+            <br>
+            <label>Colony</label>
+            <input id="address" name="address" type="text" required/>
+            <br>
+            <br>
+            <label>Village</label>
+            <input id="address" name="address" type="text" required/>
+            <br>
+            <br>
+            <label>District</label>
+            <input id="address" name="address" type="text" required/>
+            <br>
+            <br>
+            <label>Pincode</label>
+            <input id="address" name="Pin" type="text" required/>
+           </fieldset>
+           <br>
+            <br>
+           <label>country</label>
+           <select id="coun" name="country">
+            <option value="India">India</option><br>  
+            <option value="Britan">britan</option>
+            <option value="China">china</option><br>
+           </select>
+           <br />
+           <br>
+            <input type="submit"/>    
+        </fieldset>
+        </form>
+    </body>  
+</html>
